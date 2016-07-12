@@ -9,4 +9,4 @@ ADD etc/supervisord.d/buildbot-worker.ini \
     etc/supervisord.d/docker-engine.ini \
     /etc/supervisord.d/
 ADD etc/consul.d/docker-engine.json /etc/consul.d/
-VOLUME ["/var/lib/buildbot"]
+VOLUME ["/var/lib/buildbot", "/var/lib/docker"]
